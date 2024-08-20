@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International institution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>International institution</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>International institution</h2>
+        <p>Unlocking the potential of every child with world-class education.</p>
+    </section>
+    <section id="About">
+       <h2>About us</h2>
+        <p>Eductaion is our passport to the future, for tomorrow belongs to the people  who prepare for today.</p>
+    </section>
+
+    <!-- Popup Modal Form -->
+    <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admission Enquiry Form</h2>
+            <form id="enquiryForm" action="display.html">
+                <label for="studentName">Student's Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentAge">Student's Age:</label>
+                <input type="number" id="studentAge" name="studentAge" required>
+
+                <label for="parentsName">Parents' Name:</label>
+                <input type="text" id="parentsName" name="parentsName" required>
+
+                <label for="parentsPhone">Parents' Phone Number:</label>
+                <input type="tel" id="parentsPhone" name="parentsPhone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>Contact us: 8765490789</p>
+        <p>Email: info@International institution.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

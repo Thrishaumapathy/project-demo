@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admission Enquiry Details</h1>
+    </header>
+    
+    <section id="details">
+        <p><strong>Student's Name:</strong> <span id="displayStudentName"></span></p>
+        <p><strong>Student's Age:</strong> <span id="displayStudentAge"></span></p>
+        <p><strong>Parents' Name:</strong> <span id="displayParentsName"></span></p>
+        <p><strong>Parents' Phone Number:</strong> <span id="displayParentsPhone"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+    </section>
+
+
+    <script>
+        // Retrieve data from local storage and display it
+        document.getElementById('displayStudentName').textContent = localStorage.getItem('studentName');
+        document.getElementById('displayStudentAge').textContent = localStorage.getItem('studentAge');
+        document.getElementById('displayParentsName').textContent = localStorage.getItem('parentsName');
+        document.getElementById('displayParentsPhone').textContent = localStorage.getItem('parentsPhone');
+        document.getElementById('displayAddress').textContent = localStorage.getItem('address');
+    </script>
+</body>
+</html>
